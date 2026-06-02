@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogAI — Smart Log Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🔍 LogAI</h1>
+        <p>AI-Powered Log Analyzer</p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="upload-box">
+            <h2>📂 Upload Your Log File</h2>
+            <p>Click to select your log file</p>
+            <input type="file" id="fileInput" accept=".log,.txt" multiple>
+            <button onclick="analyzeLog()">🔍 Analyze Log</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <p>🤖 AI is analyzing your log...</p>
+        </div>
+
+        <div class="results" id="results">
+            <h2>📊 Analysis Results</h2>
+            <div id="aiResponse"></div>
+        </div>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

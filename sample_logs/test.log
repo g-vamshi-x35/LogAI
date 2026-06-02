@@ -1,0 +1,4 @@
+ERROR: Database connection failed
+ERROR: NullPointerException at line 42
+WARNING: Memory usage at 90%
+FATAL: Server crashed
